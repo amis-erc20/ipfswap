@@ -37,7 +37,7 @@ let erc20tokenBalance;
 
 let addressToBuy;
 
-let srcDecimal = "18"
+let srcDecimal = "9"
 let destDecimal = "18"
 
 // ##### Function that reloads page with or without query string that determines the network #####
@@ -67,11 +67,11 @@ networkSwitch.addEventListener('click', reloadPage);
 function fetchApiFromSelectedNetwork() {
   // If selected Network is Mainnet
   if (selectedEthereumNetwork == "mainnet") {
-    // Kyber Network ERC20 mainnet address
-    addressToBuy = "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359";
+    // Kyber Network ERC20 mainnet address to buy: AMIS
+    addressToBuy = "0x949bEd886c739f1A3273629b3320db0C5024c719";
   } else if (selectedEthereumNetwork = "ropsten" ) {
-    // Kyber Network ERC20 ropstem address
-    addressToBuy = "0xad6d458402f60fd3bd25163575031acdce07538d";
+    // Kyber Network ERC20 ropsten address to buy: AMIS
+    addressToBuy = "0x949bEd886c739f1A3273629b3320db0C5024c719";
   };
 }
 
@@ -90,16 +90,16 @@ const mainnetAddresses = {};
 
 // Assign currently selected src and dest token symbols
 
-let srcSymbol = "ETH";
+let srcSymbol = "AMIS";
 let destSymbol = "DAI";
 
 // Assign currently selected src and dest names
 
-let srcName = "Ethereum";
+let srcName = "AMIS";
 let destName = "DAI"
 
-// Set default source Token Decimal number to 10^18
-let srcQuantity = "1000000000000000000";
+// Set default source Token Decimal number to 10^9
+let srcQuantity = "1000000000";
 
 // Select the two token logos
 
