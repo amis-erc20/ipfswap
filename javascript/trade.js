@@ -63,9 +63,9 @@ window.addEventListener('load', function() {
   if (typeof web3 !== 'undefined' && web3.currentProvider !== null) {
     console.log('web3 is enabled')
     if (web3.currentProvider.isMetaMask === true) {
-      console.log('MetaMask is active')
+      console.log('MetaMask/TrustWallet/Nifty/Saturn is active')
     } else {
-      console.log('MetaMask is not available')
+      console.log('MetaMask/TrustWallet/Nifty/Saturn is not available')
     }
     // opens web3 client
     ethereum.enable();
@@ -75,7 +75,7 @@ window.addEventListener('load', function() {
   } else {
     // Change inner HTML of Error message
     console.log('web3 is not found')
-    console.log('Please install Metamask')
+    console.log('Please install Metamask/TrustWallet/Nifty/Saturn')
     $('.modal').modal('show');
     // Create Error Message
   }
@@ -352,4 +352,3 @@ tradeButton.addEventListener('click', function(event) {
   event.preventDefault();
   trade();
 });
-
