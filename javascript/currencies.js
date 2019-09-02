@@ -212,6 +212,7 @@ function setBuyValues() {
 
   // Set token-logo for token to buy. If it is ETH, then use local image
   (destSymbol == "ETH") ? buyLogo.src = "images/ethereum.png" : buyLogo.src = `https://raw.githubusercontent.com/TrustWallet/tokens/master/tokens/${buyTokenImageUrl}.png`;
+  (destSymbol == "AMIS") ? buyLogo.src = "https://etherscan.io/token/images/amis2_28.png" : buyLogo.src = `https://raw.githubusercontent.com/TrustWallet/tokens/master/tokens/${buyTokenImageUrl}.png`;
 
   // Re-run getExpectedRate function for new address pair & wait for the promise to resolve. Then update the numbers in the dest field
   getExpectedRate()
@@ -233,6 +234,7 @@ function setSellValues() {
 
   // Set token-logo for token to sell. If it is ETH, then use local image
   (srcSymbol == "ETH") ? sellLogo.src = "images/ethereum.png" : sellLogo.src = `https://raw.githubusercontent.com/TrustWallet/tokens/master/tokens/${sellTokenImageUrl}.png`;
+  (srcSymbol == "AMIS") ? sellLogo.src = "https://etherscan.io/token/images/amis2_28.png" : sellLogo.src = `https://raw.githubusercontent.com/TrustWallet/tokens/master/tokens/${sellTokenImageUrl}.png`;
 
   // Calc srcQuantity with srcDecimal
   srcQuantity = `${10 ** srcDecimal}`;
