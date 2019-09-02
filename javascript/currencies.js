@@ -98,8 +98,8 @@ let destSymbol = "DAI";
 let srcName = "AMIS";
 let destName = "DAI"
 
-// Set default source Token Decimal number to 10^9
-let srcQuantity = "1000000000";
+// Set default source Token Decimal number to 10^18
+let srcQuantity = "1000000000000000000";
 
 // Select the two token logos
 
